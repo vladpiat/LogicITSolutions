@@ -1,0 +1,139 @@
+body
+    font-family: 'Lato', sans-serif
+
+.ulmnu
+    list-style-type: none
+    margin: 0
+    padding: 0
+    li
+        display: inline-block
+.custom-btn
+    font-weight: 900
+    text-transform: uppercase
+    border: 0
+    border-radius: 1px
+    background-color: #ffd119
+    color: #000
+    &:active, &:focus
+        background-color: #ffd119
+
+header
+    background-image: url(../img/background.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    min-height: 100vh   
+    width: 100%
+    padding: 0 
+    padding-bottom: 30px
+    
+
+    .hire-us
+        background-color: rgba(0, 0, 0, 0.25)
+        height: 40px
+        width: 100%
+        a
+            color: #ffd119
+            line-height: 40px
+            font-weight: 600
+        .hire-us-btn
+            .hire-btn
+                @extend .custom-btn
+                padding: 0 52px
+                margin-top: 5px
+                line-height: 30px
+    .top-line 
+        padding-top: 15px
+        .navbar-collapse
+            padding-left: 0
+            padding-right: 0
+
+        
+    .logo
+        img
+            width: 100%
+
+    .top-mnu
+        font-size: 14px
+        text-transform: uppercase
+        position: absolute
+        bottom: -67px
+        .navbar-toggle
+                float: none
+
+        .nav-mnu>li>a
+            padding: 0
+        .nav-mnu>li>a:hover, .nav-mnu>li>a:focus
+            background-color: transparent
+    
+        ul
+            @extend .ulmnu
+            li
+                margin-left: 28px
+            li:first-child
+                margin-left: 0
+            li:hover
+                a
+                    color: #000
+            li.dropdown>a
+                transition: all 0.15s ease-out .1s
+                border-bottom: solid 2px transparent
+            li.dropdown:hover>a
+                border-bottom: solid 2px #ffd119
+        a
+        
+            font-weight: 700
+            text-decoration: none
+            color: #fff
+            padding-bottom: 10px
+            &.dropdown-toggle
+                z-index: 2
+                position: relative
+            &:hover
+                color: #000
+        ul.dropdown-menu
+            position: absolute
+            top: -60%
+            left: calc((( -100% - 10px) / 2) - 50% - 5px)
+            z-index: 1
+            padding-top: 30px
+            text-align: center
+            min-width: calc(100% + 10px)
+            li
+                text-align: center
+                margin-left: 0
+                text-transform: none
+                a
+                    color: #000
+                    text-align: center
+            
+    .main-title
+        text-align: center
+        text-transform: uppercase
+        color: #fff
+        font-family: 'Raleway', sans-serif
+        h1
+            font-weight: 900
+            letter-spacing: 3px
+            font-size: 30px
+            padding: 0 20px
+    .discover-wrap
+        text-align: center
+        margin-top: 45px
+        .discover-btn
+            @extend .custom-btn
+            line-height: 48px
+            padding: 0 62px
+            box-shadow: 0 10px 30px 2px rgba(255,209,25,0.8)
+.main-title-wrap
+    display: flex
+    align-items: center
+    flex-direction: column
+
+.header-wrap
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+@import media
